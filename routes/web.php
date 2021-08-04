@@ -19,4 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/list', [MangoController::class, 'fetchData']);
+Route::resource('/list', 'MangoController');
+// Route::resource('/list', UserController::class,[MangoController::class]);

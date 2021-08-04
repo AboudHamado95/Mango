@@ -20,4 +20,3 @@ Route::get('/', function () {
 });
 
 Route::resource('/list', 'MangoController');
-// Route::resource('/list', UserController::class,[MangoController::class]);

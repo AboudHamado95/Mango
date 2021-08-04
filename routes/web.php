@@ -19,6 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 //1A
-Route::get('/list', [MangController::class, 'fetchData']);
+Route::get('/list-of-mangoes', [MangController::class, 'fetchData']);
 //2A
-Route::resource('/list', 'MangoController');
+Route::resource('/list-of-mangoes', 'MangoController');

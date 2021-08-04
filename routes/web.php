@@ -18,5 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
+//1A
+Route::get('/list', [MangController::class, 'fetchData']);
+//2A
 Route::resource('/list', 'MangoController');
